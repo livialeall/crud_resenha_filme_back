@@ -1,0 +1,64 @@
+# Byte-compiled / intermediário / binários
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs e bancos de dados
+*.log
+*.sqlite3
+*.db
+*.sqlite
+
+# Diretórios do ambiente virtual
+venv/
+ENV/
+env/
+.venv/
+.ENV/
+
+# Configurações do IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Arquivos gerados por ferramentas de teste e cobertura
+htmlcov/
+.coverage
+.tox/
+.nox/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Configurações e artefatos de build
+build/
+dist/
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# Arquivos de pacotes
+*.wheel
+*.egg
+
+# Outros arquivos temporários
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Arquivos de cache do pip
+__pypackages__/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Chaves e configurações locais
+*.pem
+*.key
+.env
+.env.*
