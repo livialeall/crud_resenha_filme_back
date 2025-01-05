@@ -19,12 +19,16 @@ def home():
 def read_review():
     return db
 
-@router.put("/update_review/{id}")
-def update_review(id,data):
-    for index,review in enumerate(db):
-        if review.id == id:
-            db[index] = data
-            return data
+@router.put("/update_review")
+async def update_review(data: Review):
+    id :int = data.id
+    for r in db:
+        if(r.id == id):
+            r.nome = data.nome
+            r.resenha = data.resenha
+            r.nota = data.nota
+            return {"detail": "Review updated"}
+    return {"detail": "Review not updated"}
         
 @router.delete("/delete_review/{id}")
 def delete_review(id : int):
